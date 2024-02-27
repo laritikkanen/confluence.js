@@ -16,7 +16,8 @@
     "lint": "eslint src tests --ext .ts",
     "lint:fix": "npm run lint -- --fix",
     "test:unit": "ava tests/unit",
-    "test:integration": "ava --timeout=2m --fail-fast --no-worker-threads -c 1 -s tests/integration/**/*.test.ts"
+    "test:integration": "ava --timeout=2m --fail-fast --no-worker-threads -c 1 -s tests/integration/**/*.test.ts",
+    "prepare": "npm run build"
   },
   "ava": {
     "extensions": [
